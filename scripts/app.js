@@ -1,17 +1,26 @@
 const powerForm = document.getElementById("powerForm");
 const formResult = document.getElementById("formResult");
+const results = document.getElementsByClassName("app__form-result");
 
 //event listeners
-powerForm.addEventListener("input", showValues);
+window.addEventListener("DOMContentLoaded", showValues);
+powerForm.addEventListener("input", showValue);
+powerForm.addEventListener("submit", submitPowerForm);
 
-// show input values function
-function showValues(e) {
-  if(e.target.tagName === "INPUT") {
-    e.target.nextElementSibling.textContent = e.target.value;
-  }
+//function to show all values
+function showValues() {
+  for(let result of results)
+    result.textContent = result.previousElementSibling.value;
 }
 
-powerForm.addEventListener("submit", e => {
+// show input values function
+function showValue(e) {
+  if(e.target.tagName === "INPUT")
+    e.target.nextElementSibling.textContent = e.target.value;
+}
+
+//submit form function
+function submitPowerForm(e) {
   e.preventDefault();
 
   const inputValues = [
@@ -36,9 +45,7 @@ powerForm.addEventListener("submit", e => {
       <td>${power}</td>
   </table>
   `;
-
-  powerForm.reset();
-})
+}
 
 //function to get power type
 function getPowerType(arr) {
