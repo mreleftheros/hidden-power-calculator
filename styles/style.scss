@@ -84,4 +84,22 @@
 
     }
   }
+
+  &__result {
+    font-size: 1rem;
+
+    table {
+      margin-top: .5rem;
+      border: 1px solid #0000ff;
+      height: 100%;
+      border-collapse: collapse;
+      width: 20rem;
+      text-align: center;
+
+      tr, td, th {
+        border: 1px solid #0000ff;
+        padding: .2rem .5rem;
+      }
+    }
+  }
 }

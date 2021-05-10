@@ -88,4 +88,19 @@ body {
     width: 100%;
     font-size: 3rem;
   }
+}
+.app__result {
+  font-size: 1rem;
+}
+.app__result table {
+  margin-top: 0.5rem;
+  border: 1px solid #0000ff;
+  height: 100%;
+  border-collapse: collapse;
+  width: 20rem;
+  text-align: center;
+}
+.app__result table tr, .app__result table td, .app__result table th {
+  border: 1px solid #0000ff;
+  padding: 0.2rem 0.5rem;
 }/*# sourceMappingURL=style.css.map */
