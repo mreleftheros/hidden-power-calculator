@@ -52,10 +52,10 @@
       flex-direction: column;
       min-height: 7rem;
       margin: .2rem;
+    }
 
-      label {
-        font-size: 1.5rem;
-      }
+    &-result {
+      color: rgb(2, 0, 133);
     }
 
     &-btn {
@@ -80,6 +80,8 @@
     &__form {
       flex-direction: row;
       width: 100%;
+      font-size: 3rem;
+
     }
   }
 }

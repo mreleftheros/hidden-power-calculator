@@ -63,8 +63,8 @@ body {
   min-height: 7rem;
   margin: 0.2rem;
 }
-.app__form-content label {
-  font-size: 1.5rem;
+.app__form-result {
+  color: #020085;
 }
 .app__form-btn {
   display: block;
@@ -86,5 +86,6 @@ body {
   .app__form {
     flex-direction: row;
     width: 100%;
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
