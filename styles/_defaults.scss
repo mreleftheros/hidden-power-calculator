@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, .5), transparent),
+    url(../assets/pokemon.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
